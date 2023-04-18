@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
 
     /// Location of the ROS bag we want to read in
     std::string path_to_bag;
-    nh.param<std::string>("path_bag", path_to_bag, "/home/usl/datasets/ouster_vectornav.bag");
+    nh.param<std::string>("path_bag", path_to_bag, "/home/stephany/Downloads/2021-04-16-10-32-05_far.bag");
     ROS_INFO_STREAM("ROS BAG PATH is: " << path_to_bag.c_str());
 
     /// Load rosbag here, and find messages we can play

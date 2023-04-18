@@ -14,7 +14,7 @@
 <!--         <param name = "path_bag" type="string" value="/media/usl/Untitled/Subodh/usl-data/camera_imu_lidar/2022-01-28-15-20-21.bag"/> -->
 <!--         <param name = "path_bag" type="string" value="/media/usl/Untitled/Subodh/usl-data/camera_imu_lidar/2022-01-28-15-30-47.bag"/> -->
 
-<!--         <param name="path_bag"    type="string" value="/home/usl/Downloads/2021-04-16-10-32-05_far.bag" /> -->
+        <param name="path_bag"    type="string" value="/home/stephany/Downloads/2021-04-16-10-32-05_far.bag" /> 
 
         <param name="bag_start"   type="double" value="0.0" />
         <param name="bag_durr"    type="int"    value="-1" />
@@ -77,13 +77,13 @@
         <param name="init_calibration_result_filename" type="string" value="$(find linkalibr)/data/I_T_L_init.txt"/>
 
         <!-- output filenames -->
-        <param name="lin_trajectory_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lin_trajectory"/>
-        <param name="lin_bias_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lin_bias"/>
-        <param name="lin_velocity_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lin_velocity"/>
-        <param name="lin_calib_extrinsic_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lin_calib_extrinsics"/>
-        <param name="lin_calib_dt_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lin_calib_dt"/>
+        <param name="lin_trajectory_filename" type="string" value="$(find linkalibr)/data/lin_trajectory"/>
+        <param name="lin_bias_filename" type="string" value="$(find linkalibr)/data/lin_bias"/>
+        <param name="lin_velocity_filename" type="string" value="$(find linkalibr)/data/lin_velocity"/>
+        <param name="lin_calib_extrinsic_filename" type="string" value="$(find linkalibr)/data/lin_calib_extrinsics"/>
+        <param name="lin_calib_dt_filename" type="string" value="$(find linkalibr)/data/lin_calib_dt"/>
 
-        <param name="lo_trajectory_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/lo_trajectory"/>
+        <param name="lo_trajectory_filename" type="string" value="$(find linkalibr)/data/lo_trajectory"/>
 
         <!-- NDT Resolution -->
         <param name="ndt_resolution" type="double" value="0.25"/>
@@ -95,9 +95,9 @@
         <param name="do_planar_update" type="bool" value="false"/>
 
         <!-- Write an output -->
-        <param name="calibration_result_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/I_T_L_final.txt"/>
+        <param name="calibration_result_filename" type="string" value="$(find linkalibr)/data/I_T_L_final.txt"/>
         <param name="gen_map_data" type="bool" value="true"/>
-        <param name="map_csv_file_name" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/map.csv"/>
+        <param name="map_csv_file_name" type="string" value="$(find linkalibr)/data/map.csv"/>
 
        <!-- location to store cloud -->
        <param name="raw_scan_folder_name" type="string" value="/home/usl/catkin_ws/src/linkalibr/scans/raw"/>

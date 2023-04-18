@@ -24,7 +24,7 @@
             <param name="max_frames"      type="int"   value="550" />
             <param name="gyroscope_noise_density"      type="double"   value="0.00006243" />
             <param name="accelerometer_noise_density"  type="double"   value="0.094666" />
-            <param name="calibration_result_filename" type="string" value="/home/usl/catkin_ws/src/imu_lidar_calibration/linkalibr/data/I_T_L_init.txt"/>
+            <param name="calibration_result_filename" type="string" value="$(find linkalibr)/data/I_T_L_init.txt"/>
     </node>
 
 </launch>
