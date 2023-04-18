@@ -29,7 +29,7 @@
 #include <message_filters/sync_policies/approximate_time.h>
 
 #include <ostream>
-#include <c++/5/fstream>
+#include <fstream>
 #include <gtsam/nonlinear/LevenbergMarquardtOptimizer.h>
 
 typedef message_filters::sync_policies::ApproximateTime
@@ -168,7 +168,7 @@ public:
     }
 
     void solve() {
-        gtsam::Rot3 priorRot = gtsam::Rot3::identity();
+        gtsam::Rot3 priorRot = gtsam::Rot3(1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0);
         initial_values.insert(R(0), priorRot);
         gtsam::Values result = gtsam::LevenbergMarquardtOptimizer(graph, initial_values).optimize();
         gtsam::Rot3 finalResult = result.at<gtsam::Rot3>(R(0));
